@@ -1,0 +1,36 @@
+nullptr:
+	- keyword and a pointer literal(instance of type std::nullptr_t)
+	- it is a prvalue (pure rvalue), So you cannot take the address of nullptr, (eg, &5, &10, &nullptr not allowed)
+	- integeral null pointer constanst can be converted to nulptr_t but not the vice versa
+	- int a = reinterpret_cast<int>(nullptr) has same value as (void*)0 to int type
+	- can be initialized to bool (bool a = nullptr)
+	- <cstddef>
+	- http://en.cppreference.com/w/cpp/types/nullptr_t
+	- http://en.cppreference.com/w/cpp/language/nullptr
+	- NullPtr.cc
+
+
+Generic Selection: C11
+	- Provides a way to choose one of several expressions at compile time, based on a type of a controlling expression
+	- _Generic ( controlling-expression , association-list ) where association-list = type-name : expression
+
+Static_assert:
+	- assert.h
+	- static_assert(bool_constexpr, message)
+
+type_triats:
+	- type_traits
+	- the resulting values are available at compile time itself. So combining them with static_assert will be powerful
+	- This header defines a series of classes to obtain type information on compile-time.
+		The header contains:
+		Helper classes: Standard classes to assist in creating compile-time constants.
+		Type traits: Classes to obtain characteristics of types in the form of compile-time constant values.
+		Type transformations: Classes to obtain new types by applying specific transformations to existing types.
+	- You can also write type triats to have some functions which are not provided by the standard library
+	- Refer: TypeTriats.cc
+
+
+
+
+
+
