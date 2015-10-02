@@ -1,0 +1,16 @@
+#include <iostream>
+
+class @NAME{
+
+    public:
+        @NAME(){
+        }
+
+    private:
+
+};
+
+int main(){
+
+    return 0;
+}
