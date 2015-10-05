@@ -35,6 +35,18 @@ type_alias:
 	- Eg. template <typename T> using myVector = std::vector<T>;
 	- Refer : type_alias.cc
 
+explicit keyword on conversion objects:
+	- explicit operator <type_name>() { }
+	- example:
+	- class A { explicit operator int () {} };
+	- A a; int i = (int)a;
+
+Non static Class Member Initializer:
+	- Refer: http://en.cppreference.com/w/cpp/language/data_members
+	- Members can be initialized in 2 ways
+	- [1] member-initializer list.. (the one we give in constructors)
+	  [2] brace-or-equal initializer.. this holds the temporaries, used when we declare the members
+	- If a member is defined in member initializer list, then the temporaries (if any) assiged using brace initializer will be overridden
 
 	
 
