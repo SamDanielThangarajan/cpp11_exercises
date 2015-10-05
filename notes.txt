@@ -30,6 +30,17 @@ type_triats:
 	- Refer: TypeTriats.cc
 
 
+type_alias:
+	- similar to typedef, but useful when dealing with templates.. basically can be templated
+	- Eg. template <typename T> using myVector = std::vector<T>;
+	- Refer : type_alias.cc
+
+
+	
+
+
+
+
 
 
 
