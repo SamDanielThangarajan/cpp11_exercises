@@ -23,4 +23,3 @@ int main()
    assert(animal_names == hana::make_tuple("nemo","tom","scooby"));
 
 }
-
