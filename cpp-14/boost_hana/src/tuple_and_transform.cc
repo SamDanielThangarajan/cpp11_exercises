@@ -20,7 +20,7 @@ int main()
             return obj.name;
          });
 
-   assert(animal_names == hana::make_tuple("nemo","tom","scooby");
+   assert(animal_names == hana::make_tuple("nemo","tom","scooby"));
 
 }
 
